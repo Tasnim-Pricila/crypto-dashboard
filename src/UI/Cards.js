@@ -16,8 +16,8 @@ const Cards = () => {
         <div className="mt-[18px]">
           <p className="text-[30px] font-semibold">$123,987</p>
         </div>
-        <div className="text-[12px] flex gap-[10px] mt-[16px]">
-          <p className="font-medium">Monthly Profit</p>
+        <div className="text-[12px] flex justify-between mt-[16px]">
+          <p className="font-medium text-[#626D7D]">Monthly Profit</p>
           <p className="px-[8px] text-[#219653] font-medium">+$2560.78</p>
           <p className="px-[8px] bg-[#21965333] rounded-[60px] text-[#219653] font-semibold">
             +14.67%
@@ -37,8 +37,8 @@ const Cards = () => {
         <div className="mt-[18px]">
           <p className="text-[30px] font-semibold">$23,738</p>
         </div>
-        <div className="text-[12px] flex gap-[10px] mt-[16px]">
-          <p className="font-medium">PNL Daily</p>
+        <div className="text-[12px] flex justify-between mt-[16px]">
+          <p className="font-medium text-[#626D7D]">PNL Daily</p>
           <p className="px-[8px] text-[#EB5757] font-medium">-$16.78</p>
           <p className="px-[8px] bg-[#21965333] rounded-[60px] text-[#219653] font-semibold">
             +14.67%
@@ -58,8 +58,8 @@ const Cards = () => {
         <div className="mt-[18px]">
           <p className="text-[30px] font-semibold">$23,738</p>
         </div>
-        <div className="text-[12px] flex gap-[10px] mt-[16px]">
-          <p className="font-medium">PNL Daily</p>
+        <div className="text-[12px] flex justify-between mt-[16px]">
+          <p className="font-medium text-[#626D7D]">PNL Daily</p>
           <p className="px-[8px] text-[#219653] font-medium">+$189.91</p>
           <p className="px-[8px] bg-[#21965333] rounded-[60px] text-[#219653] font-semibold">
             +24.68%
@@ -79,8 +79,8 @@ const Cards = () => {
         <div className="mt-[18px]">
           <p className="text-[30px] font-semibold">$23,738</p>
         </div>
-        <div className="text-[12px] flex gap-[10px] mt-[16px]">
-          <p className="font-medium">PNL Daily</p>
+        <div className="text-[12px] flex justify-between mt-[16px]">
+          <p className="font-medium text-[#626D7D]">PNL Daily</p>
           <p className="px-[8px] text-[#219653] font-medium">+$556.14</p>
           <p className="px-[8px] bg-[#21965333] rounded-[60px] text-[#219653] font-semibold">
             +64.11%
