@@ -2,8 +2,8 @@ import React from "react";
 import MainLayout from "./MainLayout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
-import { faEllipsisV } from "@fortawesome/free-solid-svg-icons";
-import avatar from "../assets/images/avatar.png"
+import { faEllipsisV, faSearch } from "@fortawesome/free-solid-svg-icons";
+import avatar from "../assets/images/avatar.png";
 
 const Header = () => {
   return (
@@ -13,17 +13,24 @@ const Header = () => {
         className="h-[98px] border-b-1 flex items-center bg-white px-[39px]"
       >
         <div className="flex justify-between w-full items-center">
-          <div>
+          <div class="relative rounded-full">
             <input
               type="text"
-              placeholder="Search..."
               className="border border-[#C4CACD] w-[626px] h-[50px] px-[40px] rounded-full"
+              // class="w-full py-2 pl-4 pr-12 rounded-full focus:outline-none focus:ring focus:border-blue-300"
+              placeholder="Search..."
             />
+            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+              <FontAwesomeIcon icon={faSearch} className="pr-[16px] text-[#C4CACD]"></FontAwesomeIcon>
+            </div>
           </div>
           <div className="flex items-center gap-[29px]">
             <div className="indicator">
               {/* <span class="indicator-item badge badge-secondary"></span>  */}
-              <FontAwesomeIcon icon={faBell} className="text-[25px] text-blue-400" />
+              <FontAwesomeIcon
+                icon={faBell}
+                className="text-[25px] text-blue-400"
+              />
             </div>
             <div className="flex items-center gap-2 bg-[#F2F8FF] px-[16px] py-[6px] rounded-[9px]">
               <div class="avatar placeholder">

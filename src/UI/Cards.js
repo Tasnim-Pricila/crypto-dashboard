@@ -2,6 +2,12 @@ import wallet from "../assets/images/Icon - Wallet.png";
 import btc from "../assets/images/Icon - BTC.png";
 import eth from "../assets/images/Icon - ETH.png";
 import sql from "../assets/images/Icon - SOL.png";
+import Chart from "chart.js/auto";
+import { CategoryScale } from "chart.js";
+import BitcoinLineChart from "../Chart/BitcoinLineChart";
+import EtherumLineChart from "../Chart/EtherumLineChart";
+import SolanaLineChart from "../Chart/SolanaLineChart";
+Chart.register(CategoryScale);
 
 const Cards = () => {
   return (
@@ -25,17 +31,26 @@ const Cards = () => {
         </div>
       </div>
       <div className="bg-white rounded-[12px] p-[20px]">
-        <div className="flex gap-[16px] items-center">
-          <div>
-            <img src={btc} alt="" />
+        <div className="flex justify-between">
+          <div className="basis-1/3">
+            <div className="flex gap-[16px] items-center">
+              <div className="w-[44px]">
+                <img src={btc} alt="" />
+              </div>
+              <div className="flex flex-col">
+                <p className="font-semibold">BTCUSDT</p>
+                <p className="text-[12px]">Bitcoin</p>
+              </div>
+            </div>
+            <div className="mt-[18px]">
+              <p className="text-[20px] font-semibold">$23,738</p>
+            </div>
           </div>
-          <div className="flex flex-col">
-            <p className="font-semibold">BTCUSDT</p>
-            <p className="text-[12px]">Bitcoin</p>
+          <div className="self-end basis-2/3">
+            <div className="h-[50px]">
+              <BitcoinLineChart />
+            </div>
           </div>
-        </div>
-        <div className="mt-[18px]">
-          <p className="text-[30px] font-semibold">$23,738</p>
         </div>
         <div className="text-[12px] flex justify-between mt-[16px]">
           <p className="font-medium text-[#626D7D]">PNL Daily</p>
@@ -46,17 +61,26 @@ const Cards = () => {
         </div>
       </div>
       <div className="bg-white rounded-[12px] p-[20px]">
-        <div className="flex gap-[16px] items-center">
-          <div>
-            <img src={eth} alt="" />
+        <div className="flex justify-between">
+          <div className="basis-1/3">
+            <div className="flex gap-[16px] items-center">
+              <div className="w-[44px]">
+                <img src={eth} alt="" />
+              </div>
+              <div className="flex flex-col">
+                <p className="font-semibold">ETHUSDT</p>
+                <p className="text-[12px]">Ethereum</p>
+              </div>
+            </div>
+            <div className="mt-[18px]">
+              <p className="text-[20px] font-semibold">$23,738</p>
+            </div>
           </div>
-          <div className="flex flex-col">
-            <p className="font-semibold">ETHUSDT</p>
-            <p className="text-[12px]">Ethereum</p>
+          <div className="self-end basis-2/3">
+            <div className="h-[50px]">
+              <EtherumLineChart />
+            </div>
           </div>
-        </div>
-        <div className="mt-[18px]">
-          <p className="text-[30px] font-semibold">$23,738</p>
         </div>
         <div className="text-[12px] flex justify-between mt-[16px]">
           <p className="font-medium text-[#626D7D]">PNL Daily</p>
@@ -67,17 +91,26 @@ const Cards = () => {
         </div>
       </div>
       <div className="bg-white rounded-[12px] p-[20px]">
-        <div className="flex gap-[16px] items-center">
-          <div>
-            <img src={sql} alt="" />
+        <div className="flex justify-between">
+          <div className="basis-1/3">
+            <div className="flex gap-[16px] items-center">
+              <div className="w-[44px]">
+                <img src={sql} alt="" />
+              </div>
+              <div className="flex flex-col">
+                <p className="font-semibold">SOLUSDT</p>
+                <p className="text-[12px]">Solana</p>
+              </div>
+            </div>
+            <div className="mt-[18px]">
+              <p className="text-[20px] font-semibold">$23,738</p>
+            </div>
           </div>
-          <div className="flex flex-col">
-            <p className="font-semibold">SOLUSDT</p>
-            <p className="text-[12px]">Solana</p>
+          <div className="self-end basis-2/3">
+            <div className="h-[50px]">
+              <SolanaLineChart />
+            </div>
           </div>
-        </div>
-        <div className="mt-[18px]">
-          <p className="text-[30px] font-semibold">$23,738</p>
         </div>
         <div className="text-[12px] flex justify-between mt-[16px]">
           <p className="font-medium text-[#626D7D]">PNL Daily</p>
