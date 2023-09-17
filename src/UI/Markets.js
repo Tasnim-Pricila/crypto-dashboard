@@ -40,8 +40,8 @@ const Markets = () => {
     },
   ];
   return (
-    <div className="basis-1/3 bg-white rounded-[15px] px-[20px] py-[21px]">
-      <div className="flex justify-between items-center">
+    <div className="lg:basis-1/3 bg-white rounded-[15px] px-[20px] py-[21px]">
+      <div className="flex justify-between items-center flex-wrap">
         <div>
           <small className="font-semibold text-[20px]">Markets</small>
         </div>
@@ -71,8 +71,8 @@ const Markets = () => {
           </small>
         </div>
       </div>
-      <div className="mt-[29px]">
-        <table className="w-full">
+      <div className="mt-[29px] overflow-x-auto">
+        <table className="w-full table-xs">
           <tbody>
             {data.map((d) => (
               <tr className="w-full h-[44px] mb-[15px]">

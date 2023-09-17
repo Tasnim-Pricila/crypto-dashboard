@@ -30,7 +30,7 @@ const History = () => {
     },
   ];
   return (
-    <div className="basis-3/7 bg-white rounded-[15px] px-[29px] py-[21px]">
+    <div className="lg:basis-3/7 bg-white rounded-[15px] px-[29px] py-[21px]">
       <div className="flex justify-between items-center">
         <div>
           <small className="font-semibold text-[20px] text-[#000000]">
@@ -43,8 +43,8 @@ const History = () => {
           </button>
         </div>
       </div>
-      <div className="mt-[18px]">
-        <table className="w-full">
+      <div className="mt-[18px] overflow-x-auto">
+        <table className="w-full table-xs">
           <tbody>
             {data.map((d, i) => (
               <tr className="w-full h-[64px] mt-[26px]">

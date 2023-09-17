@@ -11,7 +11,7 @@ Chart.register(CategoryScale);
 
 const Cards = () => {
   return (
-    <div className="grid grid-cols-4 gap-[25px]">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[25px]">
       <div className="bg-white rounded-[12px] p-[20px]">
         <div className="flex gap-[16px] items-center">
           <div>
@@ -22,10 +22,10 @@ const Cards = () => {
         <div className="mt-[18px]">
           <p className="text-[30px] font-semibold">$123,987</p>
         </div>
-        <div className="text-[12px] flex justify-between mt-[16px]">
+        <div className="text-[12px] flex justify-between items-center mt-[16px]">
           <p className="font-medium text-[#626D7D]">Monthly Profit</p>
           <p className="px-[8px] text-[#219653] font-medium">+$2560.78</p>
-          <p className="px-[8px] bg-[#21965333] rounded-[60px] text-[#219653] font-semibold">
+          <p className="bg-[#21965333] rounded-[60px] px-[8px]  text-[#219653] font-semibold">
             +14.67%
           </p>
         </div>
@@ -52,7 +52,7 @@ const Cards = () => {
             </div>
           </div>
         </div>
-        <div className="text-[12px] flex justify-between mt-[16px]">
+        <div className="text-[12px] flex justify-between items-center mt-[16px]">
           <p className="font-medium text-[#626D7D]">PNL Daily</p>
           <p className="px-[8px] text-[#EB5757] font-medium">-$16.78</p>
           <p className="px-[8px] bg-[#21965333] rounded-[60px] text-[#219653] font-semibold">
@@ -82,7 +82,7 @@ const Cards = () => {
             </div>
           </div>
         </div>
-        <div className="text-[12px] flex justify-between mt-[16px]">
+        <div className="text-[12px] flex justify-between items-center mt-[16px]">
           <p className="font-medium text-[#626D7D]">PNL Daily</p>
           <p className="px-[8px] text-[#219653] font-medium">+$189.91</p>
           <p className="px-[8px] bg-[#21965333] rounded-[60px] text-[#219653] font-semibold">
@@ -112,7 +112,7 @@ const Cards = () => {
             </div>
           </div>
         </div>
-        <div className="text-[12px] flex justify-between mt-[16px]">
+        <div className="text-[12px] flex justify-between items-center mt-[16px]">
           <p className="font-medium text-[#626D7D]">PNL Daily</p>
           <p className="px-[8px] text-[#219653] font-medium">+$556.14</p>
           <p className="px-[8px] bg-[#21965333] rounded-[60px] text-[#219653] font-semibold">

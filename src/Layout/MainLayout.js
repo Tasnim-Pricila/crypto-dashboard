@@ -11,11 +11,11 @@ const MainLayout = () => {
   return (
     <>
       <Cards />
-      <div className="flex mt-[26px] gap-[20px]">
+      <div className="flex mt-[26px] gap-[20px] flex-col lg:flex-row">
         <Bitcoin />
         <Markets />
       </div>
-      <div className="flex mt-[26px] gap-[20px]">
+      <div className="flex mt-[26px] gap-[20px] flex-col lg:flex-row">
         <Assests />
         <Convert />
         <History />

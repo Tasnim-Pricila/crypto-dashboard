@@ -85,7 +85,6 @@ const CanvasChart = () => {
     if (chartRef.current) {
       chartRef.current.render(options);
     }
-    console.log("ff");
   }, []);
   return (
       <CanvasJSChart options={{}} onRef={(ref) => (chartRef.current = ref)}/>

@@ -19,6 +19,7 @@ const AssestsDoughnut = () => {
   };
   return (
       <Doughnut
+      // width={350}
         data={assetsData}
         options={{
           responsive: true,

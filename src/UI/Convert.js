@@ -4,7 +4,7 @@ import React from "react";
 
 const Convert = () => {
   return (
-    <div className="basis-2/7 bg-white rounded-[15px] px-[29px] py-[21px]">
+    <div className="lg:basis-2/7 bg-white rounded-[15px] px-[29px] py-[21px]">
       <p className="font-semibold text-[20px]">Convert</p>
       <div className="flex rounded-md overflow-hidden w-full mt-[16px]">
         <div className="relative w-full">

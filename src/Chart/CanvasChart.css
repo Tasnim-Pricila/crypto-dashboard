@@ -1,6 +1,9 @@
 .canvasjs-chart-toolbar, .canvasjs-chart-credit{
     display: none ;
 }
-.candlestick-chart div{
-    height: 100% !important;
+
+@media only screen and (min-width:1024px) {
+    .candlestick-chart div{
+        height: 100% !important;
+    }
 }
