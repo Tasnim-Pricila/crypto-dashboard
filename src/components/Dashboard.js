@@ -7,7 +7,7 @@ const Dashboard = () => {
     <div className="flex bg-[#F2F8FF]">
       <div
         id="sidebar"
-        className="h-screen w-[300px] px-[49px] border shadow-xl bg-white"
+        className="w-[300px] px-[49px] border shadow-xl bg-white"
       >
         <Sidebar />
       </div>

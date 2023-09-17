@@ -75,7 +75,7 @@ const Markets = () => {
         <table className="w-full">
           <tbody>
             {data.map((d) => (
-              <tr className="w-full h-[34px] mb-[15px]">
+              <tr className="w-full h-[44px] mb-[15px]">
                 <td className="text-[12px] font-semibold">{d.column1}</td>
                 <td className="text-[12px] font-semibold text-[#5E6E78]">
                   {d.column2}
@@ -101,7 +101,9 @@ const Markets = () => {
         </table>
       </div>
       <div className="text-right mt-[15px]">
-        <button className="text-[10px] font-semibold text-[#00000066] bg-[#bbbaba1a] px-[10px] py-[2px] rounded-[7px]">View All</button>
+      <button className="text-[10px] font-semibold text-[#00000066] border border-[#0000002a] px-[10px] py-[5px] rounded-[7px]">
+            View All
+          </button>
       </div>
     </div>
   );

@@ -18,7 +18,6 @@ const AssestsDoughnut = () => {
     ],
   };
   return (
-    <div>
       <Doughnut
         data={assetsData}
         options={{
@@ -35,7 +34,6 @@ const AssestsDoughnut = () => {
           
         }}
       />
-    </div>
   );
 };
 
